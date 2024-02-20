@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interface</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="left-side">
+        <input type="text" id="idInstance" placeholder="idInstance" value="">
+        <input type="text" id="apiTokenInstance" placeholder="ApiTokenInstance" value="">
+        <br><br>
+        <button onclick="getSettings()">getSettings</button>
+        <button onclick="getStateInstance()">getStateInstance</button>
+        <br><br>
+        <input type="text" id="phoneNumber" placeholder="Введите номер" value="">
+        <textarea type="text" id="message" placeholder="Введите текст сообщения"></textarea>
+        <br><br>
+        <button onclick="sendMessage()">sendMessage</button>
+        <br><br>
+        <input type="text" id="phoneNumberFile" placeholder="Введите номер" value="">
+        <input type="text" id="fileUrl" placeholder="Введите url файла">
+        <br><br>
+        <button onclick="sendFileByUrl()">sendFileByUrl</button>
+
+    </div>
+</div>
+<div class="right-side">
+    <textarea class="rightSideArea" id="responseTextarea" readonly></textarea>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 class="h1">Вызов Green Api</h1>
 <div class="container">
     <div class="left-side">
         <input type="text" id="idInstance" placeholder="idInstance" value="">
@@ -24,12 +25,12 @@
         <input type="text" id="fileUrl" placeholder="Введите url файла">
         <br><br>
         <button onclick="sendFileByUrl()">sendFileByUrl</button>
-
+    </div>
+    <div class="right-side">
+        <textarea id="responseTextarea" readonly></textarea>
     </div>
 </div>
-<div class="right-side">
-    <textarea class="rightSideArea" id="responseTextarea" readonly></textarea>
-</div>
+
 
 <script src="script.js"></script>
 </body>
